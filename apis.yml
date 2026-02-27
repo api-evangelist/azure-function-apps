@@ -1,0 +1,91 @@
+name: Azure Function Apps API
+description: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+image: https://azure.microsoft.com/svghandler/functions/
+tags:
+- Serverless
+- Functions
+- Compute
+- Azure
+- FaaS
+created: '2024'
+modified: '2024'
+url: https://azure.microsoft.com/en-us/services/functions/
+specificationVersion: '0.18'
+apis:
+- name: Azure Function Apps REST API
+  description: REST API for managing Azure Function Apps, including creating, updating, and deleting function apps, as well as managing function app settings and deployments.
+  image: https://azure.microsoft.com/svghandler/functions/
+  humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/
+  baseURL: https://management.azure.com
+  tags:
+  - Functions
+  - Serverless
+  - Management
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/appservice/
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/web/resource-manager/Microsoft.Web/stable/2022-09-01/WebApps.json
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-csharp#api-key-authorization
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/details/functions/
+  - type: Tutorials
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started
+  - type: SDKs
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference
+  contact:
+  - type: Support
+    url: https://azure.microsoft.com/en-us/support/options/
+  - type: Community
+    url: https://learn.microsoft.com/en-us/answers/tags/90/azure-functions
+- name: Azure Functions Runtime API
+  description: HTTP-triggered functions and webhook endpoints exposed by Azure Functions runtime for executing serverless code.
+  image: https://azure.microsoft.com/svghandler/functions/
+  humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook
+  baseURL: https://{function-app-name}.azurewebsites.net
+  tags:
+  - Runtime
+  - HTTP Triggers
+  - Webhooks
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook
+  - type: Triggers and Bindings
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings
+  - type: Best Practices
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices
+- name: Azure Functions Kudu API
+  description: Advanced management API (Kudu/SCM) for Azure Functions, providing access to deployment, file management, and diagnostic features.
+  image: https://azure.microsoft.com/svghandler/functions/
+  humanURL: https://github.com/projectkudu/kudu/wiki/REST-API
+  baseURL: https://{function-app-name}.scm.azurewebsites.net
+  tags:
+  - Deployment
+  - SCM
+  - Kudu
+  - Diagnostics
+  properties:
+  - type: Documentation
+    url: https://github.com/projectkudu/kudu/wiki/REST-API
+  - type: Deployment API
+    url: https://github.com/projectkudu/kudu/wiki/Deployment
+  - type: Command API
+    url: https://github.com/projectkudu/kudu/wiki/Kudu-console
+maintainers:
+- name: Microsoft Azure
+  email: azuresupport@microsoft.com
+  url: https://azure.microsoft.com
+common:
+- type: Portal
+  url: https://portal.azure.com
+- type: Status
+  url: https://status.azure.com
+- type: Blog
+  url: https://techcommunity.microsoft.com/t5/azure-functions/bg-p/AzureFunctionsBlog
+- type: GitHub
+  url: https://github.com/Azure/azure-functions
+- type: Terms of Service
+  url: https://azure.microsoft.com/en-us/support/legal/
+- type: Privacy Policy
+  url: https://privacy.microsoft.com/en-us/privacystatement
