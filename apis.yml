@@ -1,5 +1,5 @@
 aid: azure-function-apps
-name: Azure Function Apps API
+name: Azure Function Apps
 description: >-
   Azure Functions is a serverless compute service that lets you run event-triggered
   code without having to explicitly provision or manage infrastructure, with
