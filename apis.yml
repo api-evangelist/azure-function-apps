@@ -7,11 +7,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Serverless
-  - Functions
-  - Compute
   - Azure
+  - Compute
   - FaaS
+  - Functions
+  - Serverless
 url: >-
   https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/apis.yml
 created: '2024-01-01'
@@ -27,8 +27,8 @@ apis:
     baseURL: https://management.azure.com
     tags:
       - Functions
-      - Serverless
       - Management
+      - Serverless
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/rest/api/appservice/
