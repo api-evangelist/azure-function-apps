@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/json-schema/azure-function-apps-container-memory-statistics-schema.json",
+  "title": "ContainerMemoryStatistics",
+  "description": "ContainerMemoryStatistics schema from Azure Function Apps API",
+  "type": "object",
+  "properties": {
+    "limit": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "maxUsage": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "usage": {
+      "format": "int64",
+      "type": "integer"
+    }
+  }
+}

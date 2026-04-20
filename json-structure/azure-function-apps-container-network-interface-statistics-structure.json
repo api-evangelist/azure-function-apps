@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/json-structure/azure-function-apps-container-network-interface-statistics-structure.json",
+  "description": "ContainerNetworkInterfaceStatistics schema from Azure Function Apps API",
+  "type": "object",
+  "properties": {
+    "rxBytes": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "rxDropped": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "rxErrors": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "rxPackets": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "txBytes": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "txDropped": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "txErrors": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "txPackets": {
+      "format": "int64",
+      "type": "integer"
+    }
+  },
+  "name": "ContainerNetworkInterfaceStatistics"
+}

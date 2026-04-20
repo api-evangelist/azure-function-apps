@@ -1,81 +1,87 @@
-# Azure Function Apps API (azure-function-apps)
-Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+# Azure Function Apps (azure-function-apps)
+Azure Functions is a serverless compute service that lets you run event-triggered code without managing infrastructure, with APIs for managing function apps, deployments, and runtime operations.
 
-**URL:** [Visit APIs.json URL](https://azure.microsoft.com/en-us/services/functions/)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/apis.yml)
+
+**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
 
 ## Tags:
 
- - Serverless, Functions, Compute, Azure, FaaS
+ - Azure, Compute, FaaS, Functions, Serverless
 
 ## Timestamps
 
-- **Created:** 2024 
-- **Modified:** 2024 
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-19
 
 ## APIs
 
-### Azure Function Apps REST API
-REST API for managing Azure Function Apps, including creating, updating, and deleting function apps, as well as managing function app settings and deployments.
+### Azure Function Apps
+Azure Functions is a serverless compute service that lets you run event-triggered code without managing infrastructure, with APIs for managing function apps, deployments, and runtime operations.
 
 **Human URL:** [https://learn.microsoft.com/en-us/azure/azure-functions/](https://learn.microsoft.com/en-us/azure/azure-functions/)
 
-
 #### Tags:
 
- - Functions, Serverless, Management
+ - Functions, Management, Serverless
 
 #### Properties
 
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/appservice/)
-- [OpenAPI](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/web/resource-manager/Microsoft.Web/stable/2022-09-01/WebApps.json)
-- [Authentication](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-csharp#api-key-authorization)
-- [Pricing](https://azure.microsoft.com/en-us/pricing/details/functions/)
-- [Tutorials](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started)
-- [SDKs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference)
-
-### Azure Functions Runtime API
-HTTP-triggered functions and webhook endpoints exposed by Azure Functions runtime for executing serverless code.
-
-**Human URL:** [https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
-
-
-#### Tags:
-
- - Runtime, HTTP Triggers, Webhooks
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
-- [Triggers and Bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-- [Best Practices](https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices)
-
-### Azure Functions Kudu API
-Advanced management API (Kudu/SCM) for Azure Functions, providing access to deployment, file management, and diagnostic features.
-
-**Human URL:** [https://github.com/projectkudu/kudu/wiki/REST-API](https://github.com/projectkudu/kudu/wiki/REST-API)
-
-
-#### Tags:
-
- - Deployment, SCM, Kudu, Diagnostics
-
-#### Properties
-
-- [Documentation](https://github.com/projectkudu/kudu/wiki/REST-API)
-- [Deployment API](https://github.com/projectkudu/kudu/wiki/Deployment)
-- [Command API](https://github.com/projectkudu/kudu/wiki/Kudu-console)
+- [Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
+- [OpenAPI](openapi/azure-function-apps-openapi.yaml)
 
 ## Common Properties
 
-- [Portal](https://portal.azure.com)
-- [Status](https://status.azure.com)
-- [Blog](https://techcommunity.microsoft.com/t5/azure-functions/bg-p/AzureFunctionsBlog)
-- [GitHub](https://github.com/Azure/azure-functions)
-- [Terms of Service](https://azure.microsoft.com/en-us/support/legal/)
-- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
+
+## Artifacts
+
+Machine-readable API specifications organized by format.
+
+### OpenAPI
+
+- [Azure Function Apps](openapi/azure-function-apps-openapi.yaml)
+
+### JSON Schema
+
+- [Backup Item Collection](json-schema/azure-function-apps-backup-item-collection-schema.json)
+- [Azure Storage Property Dictionary Resource](json-schema/azure-function-apps-azure-storage-property-dictionary-resource-schema.json)
+- [Backup Schedule](json-schema/azure-function-apps-backup-schedule-schema.json)
+- [Continuous Web Job](json-schema/azure-function-apps-continuous-web-job-schema.json)
+- [Container Network Interface Statistics](json-schema/azure-function-apps-container-network-interface-statistics-schema.json)
+- [Container Info](json-schema/azure-function-apps-container-info-schema.json)
+- [Container Cpu Statistics](json-schema/azure-function-apps-container-cpu-statistics-schema.json)
+- [Container Throttling Data](json-schema/azure-function-apps-container-throttling-data-schema.json)
+- [Container Memory Statistics](json-schema/azure-function-apps-container-memory-statistics-schema.json)
+- [Backup Item](json-schema/azure-function-apps-backup-item-schema.json)
+
+### JSON-LD
+
+- [Azure Function Apps Context](json-ld/azure-function-apps-context.jsonld)
+
+## Capabilities
+
+Naftiko capabilities organized as shared per-API definitions composed into customer-facing workflows.
+
+### Shared Per-API Definitions
+
+- [Azure Function Apps](capabilities/shared/azure-function-apps.yaml)
+
+### Workflow Capabilities
+
+| Workflow | APIs Combined | Tools | Persona |
+|----------|--------------|-------|----------|
+| [Azure Function Apps Management](capabilities/azure-function-apps-management.yaml) | Azure Function Apps | 5 | Cloud Engineer |
+
+## Vocabulary
+
+- [Azure Function Apps Vocabulary](vocabulary/azure-function-apps-vocabulary.yaml)
+
+## Rules
+
+- [Azure Function Apps Spectral Rules](rules/azure-function-apps-spectral-rules.yml) — 15 rules enforcing Azure Function Apps API conventions
 
 ## Maintainers
 
-**FN:** Microsoft Azure
+**FN:** Kin Lane
 
-**Email:** azuresupport@microsoft.com
+**Email:** kin@apievangelist.com

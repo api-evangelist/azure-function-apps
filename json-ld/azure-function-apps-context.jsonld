@@ -1,0 +1,272 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "azurefunctionapps": "https://azure.microsoft.com/azure-function-apps/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ApiKVReference": "azurefunctionapps:ApiKVReference",
+    "ApplicationLogsConfig": "azurefunctionapps:ApplicationLogsConfig",
+    "AzureBlobStorageApplicationLogsConfig": "azurefunctionapps:AzureBlobStorageApplicationLogsConfig",
+    "AzureBlobStorageHttpLogsConfig": "azurefunctionapps:AzureBlobStorageHttpLogsConfig",
+    "AzureStorageInfoValue": "azurefunctionapps:AzureStorageInfoValue",
+    "AzureStoragePropertyDictionaryResource": "azurefunctionapps:AzureStoragePropertyDictionaryResource",
+    "AzureTableStorageApplicationLogsConfig": "azurefunctionapps:AzureTableStorageApplicationLogsConfig",
+    "BackupItem": "azurefunctionapps:BackupItem",
+    "BackupItemCollection": "azurefunctionapps:BackupItemCollection",
+    "BackupRequest": "azurefunctionapps:BackupRequest",
+    "BackupSchedule": "azurefunctionapps:BackupSchedule",
+    "ConnStringValueTypePair": "azurefunctionapps:ConnStringValueTypePair",
+    "ConnectionStringDictionary": "azurefunctionapps:ConnectionStringDictionary",
+    "ContainerCpuStatistics": "azurefunctionapps:ContainerCpuStatistics",
+    "ContainerCpuUsage": "azurefunctionapps:ContainerCpuUsage",
+    "ContainerInfo": "azurefunctionapps:ContainerInfo",
+    "ContainerMemoryStatistics": "azurefunctionapps:ContainerMemoryStatistics",
+    "ContainerNetworkInterfaceStatistics": "azurefunctionapps:ContainerNetworkInterfaceStatistics",
+    "ContainerThrottlingData": "azurefunctionapps:ContainerThrottlingData",
+    "ContinuousWebJob": "azurefunctionapps:ContinuousWebJob",
+    "details": {
+      "@id": "azurefunctionapps:details",
+      "@type": "xsd:string"
+    },
+    "identityType": {
+      "@id": "azurefunctionapps:identityType",
+      "@type": "xsd:string"
+    },
+    "location": {
+      "@id": "azurefunctionapps:location",
+      "@type": "xsd:string"
+    },
+    "reference": {
+      "@id": "azurefunctionapps:reference",
+      "@type": "xsd:string"
+    },
+    "secretName": {
+      "@id": "azurefunctionapps:secretName",
+      "@type": "xsd:string"
+    },
+    "secretVersion": {
+      "@id": "azurefunctionapps:secretVersion",
+      "@type": "xsd:string"
+    },
+    "source": {
+      "@id": "azurefunctionapps:source",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "azurefunctionapps:status",
+      "@type": "xsd:string"
+    },
+    "vaultName": {
+      "@id": "azurefunctionapps:vaultName",
+      "@type": "xsd:string"
+    },
+    "azureBlobStorage": {
+      "@id": "azurefunctionapps:azureBlobStorage",
+      "@type": "xsd:string"
+    },
+    "azureTableStorage": {
+      "@id": "azurefunctionapps:azureTableStorage",
+      "@type": "xsd:string"
+    },
+    "fileSystem": {
+      "@id": "azurefunctionapps:fileSystem",
+      "@type": "xsd:string"
+    },
+    "level": {
+      "@id": "azurefunctionapps:level",
+      "@type": "xsd:string"
+    },
+    "retentionInDays": {
+      "@id": "azurefunctionapps:retentionInDays",
+      "@type": "xsd:integer"
+    },
+    "sasUrl": {
+      "@id": "azurefunctionapps:sasUrl",
+      "@type": "xsd:string"
+    },
+    "enabled": {
+      "@id": "azurefunctionapps:enabled",
+      "@type": "xsd:boolean"
+    },
+    "accessKey": {
+      "@id": "azurefunctionapps:accessKey",
+      "@type": "xsd:string"
+    },
+    "accountName": {
+      "@id": "azurefunctionapps:accountName",
+      "@type": "xsd:string"
+    },
+    "mountPath": {
+      "@id": "azurefunctionapps:mountPath",
+      "@type": "xsd:string"
+    },
+    "shareName": {
+      "@id": "azurefunctionapps:shareName",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "azurefunctionapps:state",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "azurefunctionapps:type",
+      "@type": "xsd:string"
+    },
+    "properties": {
+      "@id": "azurefunctionapps:properties",
+      "@type": "@id"
+    },
+    "nextLink": {
+      "@id": "azurefunctionapps:nextLink",
+      "@type": "xsd:string"
+    },
+    "value": {
+      "@id": "azurefunctionapps:value",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "frequencyInterval": {
+      "@id": "azurefunctionapps:frequencyInterval",
+      "@type": "xsd:integer"
+    },
+    "frequencyUnit": {
+      "@id": "azurefunctionapps:frequencyUnit",
+      "@type": "xsd:string"
+    },
+    "keepAtLeastOneBackup": {
+      "@id": "azurefunctionapps:keepAtLeastOneBackup",
+      "@type": "xsd:boolean"
+    },
+    "lastExecutionTime": {
+      "@id": "azurefunctionapps:lastExecutionTime",
+      "@type": "xsd:string"
+    },
+    "retentionPeriodInDays": {
+      "@id": "azurefunctionapps:retentionPeriodInDays",
+      "@type": "xsd:integer"
+    },
+    "startTime": {
+      "@id": "azurefunctionapps:startTime",
+      "@type": "xsd:string"
+    },
+    "cpuUsage": {
+      "@id": "azurefunctionapps:cpuUsage",
+      "@type": "xsd:string"
+    },
+    "onlineCpuCount": {
+      "@id": "azurefunctionapps:onlineCpuCount",
+      "@type": "xsd:integer"
+    },
+    "systemCpuUsage": {
+      "@id": "azurefunctionapps:systemCpuUsage",
+      "@type": "xsd:integer"
+    },
+    "throttlingData": {
+      "@id": "azurefunctionapps:throttlingData",
+      "@type": "xsd:string"
+    },
+    "kernelModeUsage": {
+      "@id": "azurefunctionapps:kernelModeUsage",
+      "@type": "xsd:integer"
+    },
+    "perCpuUsage": {
+      "@id": "azurefunctionapps:perCpuUsage",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "totalUsage": {
+      "@id": "azurefunctionapps:totalUsage",
+      "@type": "xsd:integer"
+    },
+    "userModeUsage": {
+      "@id": "azurefunctionapps:userModeUsage",
+      "@type": "xsd:integer"
+    },
+    "currentCpuStats": {
+      "@id": "azurefunctionapps:currentCpuStats",
+      "@type": "xsd:string"
+    },
+    "currentTimeStamp": {
+      "@id": "azurefunctionapps:currentTimeStamp",
+      "@type": "xsd:string"
+    },
+    "eth0": {
+      "@id": "azurefunctionapps:eth0",
+      "@type": "xsd:string"
+    },
+    "id": {
+      "@id": "azurefunctionapps:id",
+      "@type": "xsd:string"
+    },
+    "memoryStats": {
+      "@id": "azurefunctionapps:memoryStats",
+      "@type": "xsd:string"
+    },
+    "name": "schema:name",
+    "previousCpuStats": {
+      "@id": "azurefunctionapps:previousCpuStats",
+      "@type": "xsd:string"
+    },
+    "previousTimeStamp": {
+      "@id": "azurefunctionapps:previousTimeStamp",
+      "@type": "xsd:string"
+    },
+    "limit": {
+      "@id": "azurefunctionapps:limit",
+      "@type": "xsd:integer"
+    },
+    "maxUsage": {
+      "@id": "azurefunctionapps:maxUsage",
+      "@type": "xsd:integer"
+    },
+    "usage": {
+      "@id": "azurefunctionapps:usage",
+      "@type": "xsd:integer"
+    },
+    "rxBytes": {
+      "@id": "azurefunctionapps:rxBytes",
+      "@type": "xsd:integer"
+    },
+    "rxDropped": {
+      "@id": "azurefunctionapps:rxDropped",
+      "@type": "xsd:integer"
+    },
+    "rxErrors": {
+      "@id": "azurefunctionapps:rxErrors",
+      "@type": "xsd:integer"
+    },
+    "rxPackets": {
+      "@id": "azurefunctionapps:rxPackets",
+      "@type": "xsd:integer"
+    },
+    "txBytes": {
+      "@id": "azurefunctionapps:txBytes",
+      "@type": "xsd:integer"
+    },
+    "txDropped": {
+      "@id": "azurefunctionapps:txDropped",
+      "@type": "xsd:integer"
+    },
+    "txErrors": {
+      "@id": "azurefunctionapps:txErrors",
+      "@type": "xsd:integer"
+    },
+    "txPackets": {
+      "@id": "azurefunctionapps:txPackets",
+      "@type": "xsd:integer"
+    },
+    "periods": {
+      "@id": "azurefunctionapps:periods",
+      "@type": "xsd:integer"
+    },
+    "throttledPeriods": {
+      "@id": "azurefunctionapps:throttledPeriods",
+      "@type": "xsd:integer"
+    },
+    "throttledTime": {
+      "@id": "azurefunctionapps:throttledTime",
+      "@type": "xsd:integer"
+    }
+  }
+}
