@@ -36,22 +36,22 @@ apis:
     url: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/web/resource-manager/Microsoft.Web/stable/2022-09-01/WebApps.json
   - type: Authentication
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger
-  - type: Getting Started
+  - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started
 common:
 - type: Portal
   url: https://portal.azure.com
 - type: Documentation
   url: https://learn.microsoft.com/en-us/azure/azure-functions/
-- type: Status
+- type: StatusPage
   url: https://status.azure.com
 - type: Blog
   url: https://techcommunity.microsoft.com/t5/azure-functions/bg-p/AzureFunctionsBlog
-- type: GitHub Organization
+- type: GitHubOrganization
   url: https://github.com/Azure/azure-functions
-- type: Terms of Service
+- type: TermsOfService
   url: https://azure.microsoft.com/en-us/support/legal/
-- type: Privacy Policy
+- type: PrivacyPolicy
   url: https://privacy.microsoft.com/en-us/privacystatement
 - type: SpectralRules
   url: https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/rules/azure-function-apps-spectral-rules.yml
