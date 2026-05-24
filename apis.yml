@@ -60,6 +60,8 @@ common:
 - name: MCP Server
   url: https://github.com/Azure/azure-functions-mcp-extension
   type: MCPServer
+- type: LLMsTxt
+  url: https://portal.azure.com/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
