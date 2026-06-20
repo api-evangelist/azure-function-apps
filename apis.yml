@@ -3,7 +3,7 @@ name: Azure Function Apps
 description: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly
   provision or manage infrastructure, with APIs for managing function apps, deployments, and runtime operations.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Azure
 - Compute
