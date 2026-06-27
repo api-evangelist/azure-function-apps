@@ -34,7 +34,7 @@ apis:
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/azure-function-apps-webapps.yaml
 common:
 - type: Portal
@@ -60,7 +60,7 @@ common:
 - name: MCP Server
   url: https://github.com/Azure/azure-functions-mcp-extension
   type: MCPServer
-- type: LLMsTxt
+- type: LlmsText
   url: https://portal.azure.com/llms.txt
 maintainers:
 - FN: Kin Lane
