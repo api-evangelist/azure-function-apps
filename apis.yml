@@ -37,6 +37,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/azure-function-apps-webapps.yaml
 common:
+- type: DomainSecurity
+  url: security/azure-function-apps-domain-security.yml
 - type: Portal
   url: https://portal.azure.com
 - type: Documentation
