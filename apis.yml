@@ -37,6 +37,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/azure-function-apps-webapps.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/azure-function-apps-agentic-access.yml
 - type: DomainSecurity
   url: security/azure-function-apps-domain-security.yml
 - type: Portal
