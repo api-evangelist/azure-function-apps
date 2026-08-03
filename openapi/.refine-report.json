@@ -1,0 +1,30 @@
+{
+  "provider": "azure-function-apps",
+  "sources": [
+    "azure-function-apps-webapps-api-openapi.yml"
+  ],
+  "outputs": [
+    "azure-function-apps-webapps-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/CsmSlotEntity",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/CustomHostnameAnalysisResult",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/DatabaseBackupSetting",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/KeyVaultReferenceCollection",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/KeyVaultReferenceResource",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/RestoreRequest",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteAuthSettings",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteConfigResourceCollection",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteLogsConfig",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SitePatchResource",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SlotConfigNamesResource",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/StringDictionary",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/apiVersionParameter",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/resourceGroupNameParameter",
+    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/subscriptionIdParameter"
+  ],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
