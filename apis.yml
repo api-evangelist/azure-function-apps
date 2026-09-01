@@ -31,7 +31,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/azure-func
 tags:
 - Azure
 - Compute
-- FaaS
+- Function-as-a-Service
 - Functions
 - Serverless
 tags_raw:
@@ -51,7 +51,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/
   baseURL: https://management.azure.com
   tags:
-  - WebApps
+  - Web App
   tags_raw:
   - WebApps
   properties:
