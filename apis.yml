@@ -1,5 +1,6 @@
 aid: azure-function-apps
 name: Azure Function Apps
+x-parent: microsoft-azure
 description: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly
   provision or manage infrastructure, with APIs for managing function apps, deployments, and runtime operations.
 type: Index
@@ -40,7 +41,7 @@ tags_raw:
 - FaaS
 - Functions
 - Serverless
-url: https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/apis.yml
+url: https://learn.microsoft.com/en-us/azure/azure-functions/
 created: '2024-01-01'
 modified: '2026-05-19'
 specificationVersion: '0.23'
