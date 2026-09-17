@@ -46,18 +46,16 @@ created: '2024-01-01'
 modified: '2026-05-19'
 specificationVersion: '0.23'
 apis:
-- aid: azure-function-apps:azure-function-apps-webapps-api
-  name: Azure Function Apps WebApps API
-  description: The WebApps API from Azure Function Apps — 30 operation(s) for webapps.
+- aid: azure-function-apps:azure-function-apps-web-apps-api
+  name: Azure Function Apps Web Apps API
+  description: The Web Apps API from Azure Function Apps — 30 operation(s) for web apps.
   humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/
   baseURL: https://management.azure.com
   tags:
-  - Web App
-  tags_raw:
-  - WebApps
+  - Web Apps
   properties:
   - type: OpenAPI
-    url: openapi/azure-function-apps-webapps-api-openapi.yml
+    url: openapi/azure-function-apps-web-apps-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/rest/api/appservice/
   - type: Authentication
