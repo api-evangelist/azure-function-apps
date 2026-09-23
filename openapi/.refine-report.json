@@ -1,30 +1,40 @@
 {
   "provider": "azure-function-apps",
   "sources": [
-    "azure-function-apps-webapps-api-openapi.yml"
+    "_original/azure-function-apps-openapi.yaml"
   ],
   "outputs": [
     "azure-function-apps-webapps-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/CsmSlotEntity",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/CustomHostnameAnalysisResult",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/DatabaseBackupSetting",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/KeyVaultReferenceCollection",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/KeyVaultReferenceResource",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/RestoreRequest",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteAuthSettings",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteConfigResourceCollection",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SiteLogsConfig",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SitePatchResource",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/SlotConfigNamesResource",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/definitions/StringDictionary",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/apiVersionParameter",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/resourceGroupNameParameter",
-    "azure-function-apps-webapps-api-openapi.yml: dangling $ref: #/parameters/subscriptionIdParameter"
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/CsmSlotEntity",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/CustomHostnameAnalysisResult",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/DatabaseBackupSetting",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/KeyVaultReferenceCollection",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/KeyVaultReferenceResource",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/RestoreRequest",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/SiteAuthSettings",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/SiteConfigResourceCollection",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/SiteLogsConfig",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/SitePatchResource",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/SlotConfigNamesResource",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/definitions/StringDictionary",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/parameters/apiVersionParameter",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/parameters/resourceGroupNameParameter",
+    "azure-function-apps-openapi.yaml: dangling $ref: #/parameters/subscriptionIdParameter"
   ],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "azure-function-apps-openapi.yaml: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "azure-function-apps-openapi.yaml: declared missing tag: WebApps",
+    "superseded outputs removed: azure-function-apps-web-apps-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 1 total)"
+  ],
+  "skipped": [
+    "azure-function-apps-web-apps-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
