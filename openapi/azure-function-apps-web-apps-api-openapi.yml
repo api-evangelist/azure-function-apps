@@ -10931,21 +10931,6 @@ paths:
         required: true
 components:
   schemas:
-    BackupItemCollection:
-      description: Collection of backup items.
-      properties:
-        nextLink:
-          description: Link to next page of resources.
-          readOnly: true
-          type: string
-        value:
-          description: Collection of resources.
-          items:
-            $ref: '#/components/schemas/BackupItem'
-          type: array
-      required:
-      - value
-      type: object
     AzureStorageInfoValue:
       description: Azure Files or Blob Storage access information value for dictionary storage.
       properties:
@@ -10982,33 +10967,62 @@ components:
             modelAsString: false
             name: AzureStorageType
       type: object
-    ConnStringValueTypePair:
-      description: Database connection string value to type pair.
+    BackupItemCollection:
+      description: Collection of backup items.
       properties:
-        type:
-          description: Type of database.
+        nextLink:
+          description: Link to next page of resources.
+          readOnly: true
+          type: string
+        value:
+          description: Collection of resources.
+          items:
+            $ref: '#/components/schemas/BackupItem'
+          type: array
+      required:
+      - value
+      type: object
+    BackupSchedule:
+      description: Description of a backup schedule. Describes how often should be the backup performed and what should be the retention policy.
+      properties:
+        frequencyInterval:
+          default: 7
+          description: How often the backup should be executed (e.g. for weekly backup, this should be set to 7 and FrequencyUnit should be set to Day)
+          format: int32
+          type: integer
+        frequencyUnit:
+          default: Day
+          description: The unit of time for how often the backup should be executed (e.g. for weekly backup, this should be set to Day and FrequencyInterval should be set to 7)
           enum:
-          - MySql
-          - SQLServer
-          - SQLAzure
-          - Custom
-          - NotificationHub
-          - ServiceBus
-          - EventHub
-          - ApiHub
-          - DocDb
-          - RedisCache
-          - PostgreSQL
+          - Day
+          - Hour
           type: string
           x-ms-enum:
             modelAsString: false
-            name: ConnectionStringType
-        value:
-          description: Value of pair.
+            name: FrequencyUnit
+        keepAtLeastOneBackup:
+          default: true
+          description: True if the retention policy should always keep at least one backup in the storage account, regardless how old it is; false otherwise.
+          type: boolean
+        lastExecutionTime:
+          description: Last time when this schedule was triggered.
+          format: date-time
+          readOnly: true
+          type: string
+        retentionPeriodInDays:
+          default: 30
+          description: After how many days backups should be deleted.
+          format: int32
+          type: integer
+        startTime:
+          description: When the schedule should start working.
+          format: date-time
           type: string
       required:
-      - value
-      - type
+      - frequencyInterval
+      - frequencyUnit
+      - keepAtLeastOneBackup
+      - retentionPeriodInDays
       type: object
     BackupRequest:
       allOf:
@@ -11162,76 +11176,33 @@ components:
               type: integer
           x-ms-client-flatten: true
       type: object
-    BackupSchedule:
-      description: Description of a backup schedule. Describes how often should be the backup performed and what should be the retention policy.
+    ConnStringValueTypePair:
+      description: Database connection string value to type pair.
       properties:
-        frequencyInterval:
-          default: 7
-          description: How often the backup should be executed (e.g. for weekly backup, this should be set to 7 and FrequencyUnit should be set to Day)
-          format: int32
-          type: integer
-        frequencyUnit:
-          default: Day
-          description: The unit of time for how often the backup should be executed (e.g. for weekly backup, this should be set to Day and FrequencyInterval should be set to 7)
+        type:
+          description: Type of database.
           enum:
-          - Day
-          - Hour
+          - MySql
+          - SQLServer
+          - SQLAzure
+          - Custom
+          - NotificationHub
+          - ServiceBus
+          - EventHub
+          - ApiHub
+          - DocDb
+          - RedisCache
+          - PostgreSQL
           type: string
           x-ms-enum:
             modelAsString: false
-            name: FrequencyUnit
-        keepAtLeastOneBackup:
-          default: true
-          description: True if the retention policy should always keep at least one backup in the storage account, regardless how old it is; false otherwise.
-          type: boolean
-        lastExecutionTime:
-          description: Last time when this schedule was triggered.
-          format: date-time
-          readOnly: true
-          type: string
-        retentionPeriodInDays:
-          default: 30
-          description: After how many days backups should be deleted.
-          format: int32
-          type: integer
-        startTime:
-          description: When the schedule should start working.
-          format: date-time
+            name: ConnectionStringType
+        value:
+          description: Value of pair.
           type: string
       required:
-      - frequencyInterval
-      - frequencyUnit
-      - keepAtLeastOneBackup
-      - retentionPeriodInDays
-      type: object
-    AzureStoragePropertyDictionaryResource:
-      allOf:
-      - description: Azure proxy only resource. This resource is not tracked by Azure Resource Manager.
-        properties:
-          id:
-            description: Resource Id.
-            readOnly: true
-            type: string
-          kind:
-            description: Kind of resource.
-            type: string
-          name:
-            description: Resource Name.
-            readOnly: true
-            type: string
-          type:
-            description: Resource type.
-            readOnly: true
-            type: string
-        x-ms-azure-resource: true
-      description: AzureStorageInfo dictionary resource.
-      properties:
-        properties:
-          additionalProperties:
-            $ref: '#/components/schemas/AzureStorageInfoValue'
-          description: Azure storage accounts.
-          type: object
-          x-ms-client-flatten: true
+      - value
+      - type
       type: object
     ConnectionStringDictionary:
       allOf:
@@ -11259,6 +11230,35 @@ components:
           additionalProperties:
             $ref: '#/components/schemas/ConnStringValueTypePair'
           description: Connection strings.
+          type: object
+          x-ms-client-flatten: true
+      type: object
+    AzureStoragePropertyDictionaryResource:
+      allOf:
+      - description: Azure proxy only resource. This resource is not tracked by Azure Resource Manager.
+        properties:
+          id:
+            description: Resource Id.
+            readOnly: true
+            type: string
+          kind:
+            description: Kind of resource.
+            type: string
+          name:
+            description: Resource Name.
+            readOnly: true
+            type: string
+          type:
+            description: Resource type.
+            readOnly: true
+            type: string
+        x-ms-azure-resource: true
+      description: AzureStorageInfo dictionary resource.
+      properties:
+        properties:
+          additionalProperties:
+            $ref: '#/components/schemas/AzureStorageInfoValue'
+          description: Azure storage accounts.
           type: object
           x-ms-client-flatten: true
       type: object
