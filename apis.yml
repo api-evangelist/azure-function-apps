@@ -52,6 +52,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/
   baseURL: https://management.azure.com
   tags:
+  - Web App
+  tags_raw:
   - Web Apps
   properties:
   - type: OpenAPI
