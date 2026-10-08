@@ -64,6 +64,12 @@ apis:
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started
 common:
+- type: Plans
+  url: plans/azure-function-apps-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/azure-function-apps-rate-limits.yml
+- type: FinOps
+  url: finops/azure-function-apps-finops.yml
 - type: AgenticAccess
   url: agentic-access/azure-function-apps-agentic-access.yml
 - type: DomainSecurity
