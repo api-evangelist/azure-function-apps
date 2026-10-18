@@ -30,7 +30,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/azure-function-apps.png
 tags:
-- Azure
+- Microsoft Azure
 - Compute
 - Function-as-a-Service
 - Functions
@@ -52,6 +52,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/azure/azure-functions/
   baseURL: https://management.azure.com
   tags:
+  - Web App
+  tags_raw:
   - Web Apps
   properties:
   - type: OpenAPI
