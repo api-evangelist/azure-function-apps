@@ -66,6 +66,8 @@ apis:
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/azure-function-apps/overview
 - type: Plans
   url: plans/azure-function-apps-plans-pricing.yml
 - type: RateLimits
