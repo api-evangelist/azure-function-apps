@@ -1,4 +1,4 @@
-# Azure Function Apps (azure-function-apps)
+# Azure Function Apps
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,89 +64,183 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Azure Functions is a serverless compute service that lets you run event-triggered code without managing infrastructure, with APIs for managing function apps, deployments, and runtime operations.
+Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure, with APIs for managing function apps, deployments, and runtime operations.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/azure-function-apps/refs/heads/main/apis.yml)
+**Areas:** Microsoft Azure · Compute · Function-as-a-Service · Functions · Serverless
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Azure Function Apps on APIs.io
 
-## Tags:
+Everything profiled for Azure Function Apps is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/azure-function-apps/](https://apis.io/providers/azure-function-apps/)** — or go straight to one of the APIs or properties below.
 
- - Azure, Compute, FaaS, Functions, Serverless
+### APIs (1)
 
-## Timestamps
+- [Azure Function Apps Web Apps API](https://apis.io/apis/azure-function-apps/azure-function-apps-web-apps-api/) — The Web Apps API from Azure Function Apps — 30 operation(s) for web apps.
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Azure Function Apps
-Azure Functions is a serverless compute service that lets you run event-triggered code without managing infrastructure, with APIs for managing function apps, deployments, and runtime operations.
+#### MCP servers (1)
 
-**Human URL:** [https://learn.microsoft.com/en-us/azure/azure-functions/](https://learn.microsoft.com/en-us/azure/azure-functions/)
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags:
+- [MCP Server](https://apis.io/servers/azure-function-apps/mcp-server/)
 
- - Functions, Management, Serverless
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Azure Function Apps Agentic Access](https://apis.io/agentic-access/azure-function-apps/azure-function-apps-agentic-access/)
+
+#### JSON Schema (20)
+
+The data models the API reads and writes.
+
+- [ApiKVReference](https://apis.io/schemas/azure-function-apps/azure-function-apps-api-kv-reference/)
+- [ApplicationLogsConfig](https://apis.io/schemas/azure-function-apps/azure-function-apps-application-logs-config/)
+- [AzureBlobStorageApplicationLogsConfig](https://apis.io/schemas/azure-function-apps/azure-function-apps-azure-blob-storage-application-logs-config/)
+- [AzureBlobStorageHttpLogsConfig](https://apis.io/schemas/azure-function-apps/azure-function-apps-azure-blob-storage-http-logs-config/)
+- [AzureStorageInfoValue](https://apis.io/schemas/azure-function-apps/azure-function-apps-azure-storage-info-value/)
+- [AzureStoragePropertyDictionaryResource](https://apis.io/schemas/azure-function-apps/azure-function-apps-azure-storage-property-dictionary-resource/)
+- [AzureTableStorageApplicationLogsConfig](https://apis.io/schemas/azure-function-apps/azure-function-apps-azure-table-storage-application-logs-config/)
+- [BackupItem](https://apis.io/schemas/azure-function-apps/azure-function-apps-backup-item/)
+- [BackupItemCollection](https://apis.io/schemas/azure-function-apps/azure-function-apps-backup-item-collection/)
+- [BackupRequest](https://apis.io/schemas/azure-function-apps/azure-function-apps-backup-request/)
+- [BackupSchedule](https://apis.io/schemas/azure-function-apps/azure-function-apps-backup-schedule/)
+- [ConnStringValueTypePair](https://apis.io/schemas/azure-function-apps/azure-function-apps-conn-string-value-type-pair/)
+- [ConnectionStringDictionary](https://apis.io/schemas/azure-function-apps/azure-function-apps-connection-string-dictionary/)
+- [ContainerCpuStatistics](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-cpu-statistics/)
+- [ContainerCpuUsage](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-cpu-usage/)
+- [ContainerInfo](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-info/)
+- [ContainerMemoryStatistics](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-memory-statistics/)
+- [ContainerNetworkInterfaceStatistics](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-network-interface-statistics/)
+- [ContainerThrottlingData](https://apis.io/schemas/azure-function-apps/azure-function-apps-container-throttling-data/)
+- [ContinuousWebJob](https://apis.io/schemas/azure-function-apps/azure-function-apps-continuous-web-job/)
+
+#### JSON Structure (20)
+
+Data models expressed in JSON Structure.
+
+- [Azure Function Apps Api Kv Reference Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-api-kv-reference-structure/)
+- [Azure Function Apps Application Logs Config Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-application-logs-config-structure/)
+- [Azure Function Apps Azure Blob Storage Application Logs Config Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-azure-blob-storage-application-logs-config-structure/)
+- [Azure Function Apps Azure Blob Storage Http Logs Config Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-azure-blob-storage-http-logs-config-structure/)
+- [Azure Function Apps Azure Storage Info Value Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-azure-storage-info-value-structure/)
+- [Azure Function Apps Azure Storage Property Dictionary Resource Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-azure-storage-property-dictionary-resource-structure/)
+- [Azure Function Apps Azure Table Storage Application Logs Config Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-azure-table-storage-application-logs-config-structure/)
+- [Azure Function Apps Backup Item Collection Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-backup-item-collection-structure/)
+- [Azure Function Apps Backup Item Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-backup-item-structure/)
+- [Azure Function Apps Backup Request Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-backup-request-structure/)
+- [Azure Function Apps Backup Schedule Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-backup-schedule-structure/)
+- [Azure Function Apps Conn String Value Type Pair Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-conn-string-value-type-pair-structure/)
+- [Azure Function Apps Connection String Dictionary Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-connection-string-dictionary-structure/)
+- [Azure Function Apps Container Cpu Statistics Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-cpu-statistics-structure/)
+- [Azure Function Apps Container Cpu Usage Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-cpu-usage-structure/)
+- [Azure Function Apps Container Info Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-info-structure/)
+- [Azure Function Apps Container Memory Statistics Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-memory-statistics-structure/)
+- [Azure Function Apps Container Network Interface Statistics Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-network-interface-statistics-structure/)
+- [Azure Function Apps Container Throttling Data Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-container-throttling-data-structure/)
+- [Azure Function Apps Continuous Web Job Structure](https://apis.io/json-structure/azure-function-apps/azure-function-apps-continuous-web-job-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Azure Function Apps Context](https://apis.io/jsonld/azure-function-apps/azure-function-apps-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Azure Function Apps Vocabulary](https://apis.io/vocabularies/azure-function-apps/azure-function-apps-vocabulary/)
+
+#### Examples (20)
+
+Example requests and responses.
+
+- [Azure Function Apps Api Kv Reference Example](https://apis.io/examples/azure-function-apps/azure-function-apps-api-kv-reference-example/)
+- [Azure Function Apps Application Logs Config Example](https://apis.io/examples/azure-function-apps/azure-function-apps-application-logs-config-example/)
+- [Azure Function Apps Azure Blob Storage Application Logs Config Example](https://apis.io/examples/azure-function-apps/azure-function-apps-azure-blob-storage-application-logs-config-example/)
+- [Azure Function Apps Azure Blob Storage Http Logs Config Example](https://apis.io/examples/azure-function-apps/azure-function-apps-azure-blob-storage-http-logs-config-example/)
+- [Azure Function Apps Azure Storage Info Value Example](https://apis.io/examples/azure-function-apps/azure-function-apps-azure-storage-info-value-example/)
+- [Azure Function Apps Azure Storage Property Dictionary Resource Example](https://apis.io/examples/azure-function-apps/azure-function-apps-azure-storage-property-dictionary-resource-example/)
+- [Azure Function Apps Azure Table Storage Application Logs Config Example](https://apis.io/examples/azure-function-apps/azure-function-apps-azure-table-storage-application-logs-config-example/)
+- [Azure Function Apps Backup Item Collection Example](https://apis.io/examples/azure-function-apps/azure-function-apps-backup-item-collection-example/)
+- [Azure Function Apps Backup Item Example](https://apis.io/examples/azure-function-apps/azure-function-apps-backup-item-example/)
+- [Azure Function Apps Backup Request Example](https://apis.io/examples/azure-function-apps/azure-function-apps-backup-request-example/)
+- [Azure Function Apps Backup Schedule Example](https://apis.io/examples/azure-function-apps/azure-function-apps-backup-schedule-example/)
+- [Azure Function Apps Conn String Value Type Pair Example](https://apis.io/examples/azure-function-apps/azure-function-apps-conn-string-value-type-pair-example/)
+- [Azure Function Apps Connection String Dictionary Example](https://apis.io/examples/azure-function-apps/azure-function-apps-connection-string-dictionary-example/)
+- [Azure Function Apps Container Cpu Statistics Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-cpu-statistics-example/)
+- [Azure Function Apps Container Cpu Usage Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-cpu-usage-example/)
+- [Azure Function Apps Container Info Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-info-example/)
+- [Azure Function Apps Container Memory Statistics Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-memory-statistics-example/)
+- [Azure Function Apps Container Network Interface Statistics Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-network-interface-statistics-example/)
+- [Azure Function Apps Container Throttling Data Example](https://apis.io/examples/azure-function-apps/azure-function-apps-container-throttling-data-example/)
+- [Azure Function Apps Continuous Web Job Example](https://apis.io/examples/azure-function-apps/azure-function-apps-continuous-web-job-example/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Azure Functions Management WebApps API](https://apis.io/collections/azure-function-apps/open-azure-function-apps-webapps-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Azure Function Apps — jsonschema rules](https://apis.io/rules/azure-function-apps/azure-function-apps-jsonschema-spectral-rules/)
+- [Azure Function Apps API Rules](https://apis.io/rules/azure-function-apps/azure-function-apps-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Azure Function Apps Domain Security](https://apis.io/security/azure-function-apps/azure-function-apps-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Azure Function Apps Plans Pricing](https://apis.io/plans/azure-function-apps/azure-function-apps-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Azure Function Apps Rate Limits](https://apis.io/rate-limits/azure-function-apps/azure-function-apps-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Azure Function Apps Finops](https://apis.io/finops/azure-function-apps/azure-function-apps-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
-- [OpenAPI](openapi/azure-function-apps-openapi.yaml)
+- [Blog](https://techcommunity.microsoft.com/t5/azure-functions/bg-p/AzureFunctionsBlog)
+- [Terms of service](https://azure.microsoft.com/en-us/support/legal/)
+- [Privacy policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [GitHub](https://github.com/Azure/azure-functions)
+- [Status](https://status.azure.com)
 
-## Common Properties
+## API Evangelist rating
 
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-## Artifacts
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-Machine-readable API specifications organized by format.
+## How this profile is made
 
-### OpenAPI
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [Azure Function Apps](openapi/azure-function-apps-openapi.yaml)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Azure Function Apps: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Schema
+## Open an issue
 
-- [Backup Item Collection](json-schema/azure-function-apps-backup-item-collection-schema.json)
-- [Azure Storage Property Dictionary Resource](json-schema/azure-function-apps-azure-storage-property-dictionary-resource-schema.json)
-- [Backup Schedule](json-schema/azure-function-apps-backup-schedule-schema.json)
-- [Continuous Web Job](json-schema/azure-function-apps-continuous-web-job-schema.json)
-- [Container Network Interface Statistics](json-schema/azure-function-apps-container-network-interface-statistics-schema.json)
-- [Container Info](json-schema/azure-function-apps-container-info-schema.json)
-- [Container Cpu Statistics](json-schema/azure-function-apps-container-cpu-statistics-schema.json)
-- [Container Throttling Data](json-schema/azure-function-apps-container-throttling-data-schema.json)
-- [Container Memory Statistics](json-schema/azure-function-apps-container-memory-statistics-schema.json)
-- [Backup Item](json-schema/azure-function-apps-backup-item-schema.json)
-
-### JSON-LD
-
-- [Azure Function Apps Context](json-ld/azure-function-apps-context.jsonld)
-
-## Capabilities
-
-Naftiko capabilities organized as shared per-API definitions composed into customer-facing workflows.
-
-### Shared Per-API Definitions
-
-- [Azure Function Apps](capabilities/shared/azure-function-apps.yaml)
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|----------|
-| [Azure Function Apps Management](capabilities/azure-function-apps-management.yaml) | Azure Function Apps | 5 | Cloud Engineer |
-
-## Vocabulary
-
-- [Azure Function Apps Vocabulary](vocabulary/azure-function-apps-vocabulary.yaml)
-
-## Rules
-
-- [Azure Function Apps Spectral Rules](rules/azure-function-apps-spectral-rules.yml) — 15 rules enforcing Azure Function Apps API conventions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/azure-function-apps/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
